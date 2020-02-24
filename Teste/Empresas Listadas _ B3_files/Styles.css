@@ -1,0 +1,24 @@
+
+.ComboBoxDropDown_SiteBmfBovespa {border:1px solid #e5e5e5; cursor:pointer;}
+
+.ComboBoxImage_SiteBmfBovespa, .ComboBoxImageHover_SiteBmfBovespa {border:1px solid #e5e5e5;}
+.ComboBoxInput_SiteBmfBovespa, .ComboBoxInputHover_SiteBmfBovespa {border:1px solid #e5e5e5; padding:0 8px; min-height:48px; cursor:default;}
+
+.ComboBoxItem_SiteBmfBovespa {padding:0 8px; text-decoration:none; text-align:left; background:#fff;}
+.ComboBoxItemHover_SiteBmfBovespa {padding:0 8px; text-decoration:none; text-align:left; background:#fff;}
+.ComboBoxItemDisabled_SiteBmfBovespa {padding:0 8px; text-decoration:none; text-align:left; background:#fff;}
+
+.ComboBoxLoadingMessage_SiteBmfBovespa {padding:4px;}
+
+.ComboBoxMoreResultsMessage_SiteBmfBovespa {padding:4px; text-align:center;}
+.ComboBoxMoreResultsImage_SiteBmfBovespa {padding:8px; margin-top:8px; float:right;}
+.ComboBoxMoreResultsBox_SiteBmfBovespa {}
+
+.ComboBoxHeader_SiteBmfBovespa {width:100% !important; padding:0 8px; text-decoration:none; text-align:left;}
+
+.ComboBox_SiteBmfBovespa {width:100% !important;}
+.ComboBox_SiteBmfBovespa input {background-color:#fff !important; width:100% !important;}
+.ComboBox_SiteBmfBovespa img {vertical-align:middle !important; margin-top: -48px !important; display:inline-block; float: right;}
+
+div.ComboBox_SiteBmfBovespa img { margin-right:8px}
+html > body div.ComboBox_SiteBmfBovespa img {margin-top: 0px;}

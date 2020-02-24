@@ -1,0 +1,94 @@
+.GridBovespaCSS, .GridBovespaCSS table {width:100% !important;}
+.GridBovespaCSS table thead a:link,
+.GridBovespaCSS table thead a:visited  {color:#fff !important;}
+.GridBovespaCSS table thead a:hover,
+.GridBovespaCSS table thead a:active {color:#fff !important;}
+
+div.GridHeaderDiv_SiteBmfBovespa {}
+div.GridHeaderDiv_SiteBmfBovespa table {}
+div.GridHeaderDiv_SiteBmfBovespa table thead {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr th.GridHeader_SiteBmfBovespa {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr th a {color:#fff !important;}
+
+div.GridHeaderDiv_SiteBmfBovespa table thead tr.GridFilterRow_SiteBmfBovespa {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr.GridFilterRow_SiteBmfBovespa td {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr.GridFilterRow_SiteBmfBovespa td input {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr.GridFilterRow_SiteBmfBovespa td input[type="text"] {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr.GridFilterRow_SiteBmfBovespa td input[type="checkbox"] {}
+div.GridHeaderDiv_SiteBmfBovespa table thead tr.GridFilterRow_SiteBmfBovespa td img {}
+div.GridHeaderDiv_SiteBmfBovespa .GridHeader_SiteBmfBovespa {}
+
+div.GridDataDiv_SiteBmfBovespa {}
+div.GridDataDiv_SiteBmfBovespa table {}
+div.GridDataDiv_SiteBmfBovespa table tbody {}
+div.GridDataDiv_SiteBmfBovespa table tbody tr {}
+div.GridDataDiv_SiteBmfBovespa table tbody tr td {}
+div.GridDataDiv_SiteBmfBovespa table tbody tr td.GridRow_SiteBmfBovespa {}
+div.GridDataDiv_SiteBmfBovespa table tbody tr td.GridAltRow_SiteBmfBovespa {}
+
+/* paginação */
+div.tabela table tfoot tr.GridPager_SiteBmfBovespa:hover td table td {}
+.GridBovespaCSS tfoot tr td span {}
+.GridBovespaCSS tfoot tr {}
+.GridBovespaCSS tfoot tr td {}
+.GridBovespaCSS tfoot input {}
+.GridBovespaCSS tfoot tr td span table {}
+.GridBovespaCSS tfoot tr td span table tr {}
+.GridBovespaCSS tfoot tr:hover {}
+.GridBovespaCSS tfoot tr td span table td,
+.GridBovespaCSS tfoot tr td span table td:hover {}
+.GridBovespaCSS tfoot tr td span table td.AnteriorPaginacao {}
+.GridBovespaCSS tfoot tr td span table td.MeioPaginacao {}
+.GridBovespaCSS tfoot tr td span table td.ProximoPaginacao {}
+.GridBovespaCSS tfoot tr td span table td.AnteriorPaginacao input {}
+.GridBovespaCSS tfoot tr td span table td.ProximoPaginacao input {}
+.GridBovespaCSS tfoot tr td span table td.AnteriorPaginacao input[disabled], .GridBovespaCSS tfoot tr td span table td.AnteriorPaginacao input[disabled="disabled"]  {display:none;}
+.GridBovespaCSS tfoot tr td span table {}
+
+.GridBovespaCSS table.MasterTable_SiteBmfBovespa {}
+
+
+.GridBovespaPagerStyle {}
+
+.PanelNumericPager {}
+.PanelNumericPager span.label {}
+a.PagingPageNumber, .PanelNumericPager a  {}
+
+.GridPager_SiteBmfBovespa {}
+.GridPager_SiteBmfBovespa tfoot tr td span table td.MeioPaginacao {}
+.GridPager_SiteBmfBovespa tfoot tr td span table td.ProximoPaginacao {}
+
+/* Menu Filtro */
+table.GridFilterMenu_SiteBmfBovespa {}
+table.GridFilterMenu_SiteBmfBovespa table {}
+table.GridFilterMenu_SiteBmfBovespa table tr {}
+table.GridFilterMenu_SiteBmfBovespa table tr td.GridFilterMenuSelectColumn_SiteBmfBovespa {}
+table.GridFilterMenu_SiteBmfBovespa table tr td.GridFilterMenuSelectColumn_SiteBmfBovespa img {}
+table.GridFilterMenu_SiteBmfBovespa table tr td.GridFilterMenuTextColumn_SiteBmfBovespa {}
+.GridBovespaFooterItemStyle td {}
+
+/* Ajustes tabela aninhadas */
+.GridBovespaCSS .SubTable, .GridFooter_SiteBmfBovespa .SubTable {}
+.GridBovespaCSS .SubTable table, .GridFooter_SiteBmfBovespa .SubTable table {}
+.GridFooter_SiteBmfBovespa .SubTable table {}
+.GridFooter_SiteBmfBovespa .SubTable table td {}
+.SubTable table td:first-child {} 
+
+.GridBovespaCSS table.MasterTable_SiteBmfBovespa  .SubTable table {}
+.GridBovespaCSS table.MasterTable_SiteBmfBovespa  .SubTable table td {}
+.GridBovespaCSS table.MasterTable_SiteBmfBovespa  .SubTable table td:first-child {} 
+
+.GridBovespaCSS .SubTableHeader {}
+.GridBovespaCSS .SubTableHeader table {}
+.GridBovespaCSS .SubTableHeader table td {}
+
+.GridLoadingTemplate_SiteBmfBovespa img {}
+
+.GridBovespaCSS thead th input,
+.GridHeader_SiteBmfBovespa input,
+.GridBovespaHeaderStyle input, 
+.GridHeader_SiteBmfBovespa img,
+.GridBovespaHeaderStyle img {}
+.GridHeader_SiteBmfBovespa a,
+.GridBovespaHeaderStyle a {}

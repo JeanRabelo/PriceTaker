@@ -1,0 +1,340 @@
+/* $Revision: 19483 $ $Date: 2016-11-11 17:24:05 +0000 (Fri, 11 Nov 2016) $ */
+.lumis-service-search-search .lum-form-field-id-query {
+	width:100%;
+	display:inline-block;
+	margin:0;
+}
+.lumis-service-search-search .lum-content-body {
+	position:relative;
+	padding-right:80px;
+	max-width:500px;
+}
+.lumis-service-search-search .lum-actions {
+	position:absolute;
+	right:0;
+	top:-1px;
+}
+
+.lumis-service-search-searchResults .lum-form-field-id-query {
+	width:100%;
+	display:inline-block;
+	margin:0;
+}
+.lumis-service-search-searchResults .lum-search-form {
+	position:relative;
+	padding-right:86px;
+	max-width:500px;
+}
+.lumis-service-search-searchResults .lum-actions {
+	position:absolute;
+	right:0;
+	top:-1px;
+}
+.lumis-service-search-searchResults .lum-form-field-id-sortCriteria > div {
+	display:inline;
+}
+
+.lumis-service-search-didYouMeanLink{
+	font-weight: bold;
+}
+
+/* no rows message */
+.lum-search-norowsmessage {
+	border-top:1px solid #ebebeb;
+	margin-top:15px;
+}
+.lum-search-norowsmessage .lum-list {
+	font-size:12px;
+}
+.lum-search-norowsmessage > p {
+	font-weight:bold;
+}
+.lum-search-norowsmessage .lum-list-item:before {
+	content:"";
+	background:#FF9700;
+	border:3px solid transparent;
+	border-radius:3px;
+	width:0px;
+	height:0px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.lum-search-norowsmessage .lum-list-item:after {
+	content:none;
+}
+
+/* highlight */
+.lumis-service-search-searchResults .lum-field-id-highlights .lum-field-label
+{
+	display:none;
+}
+.lumis-service-search-searchResults .lum-field-id-highlights .lum-field-value
+{
+	color:#999999;
+}
+.lumis-service-search-searchResults .lum-field-id-highlights .lum-field-value em
+{
+	font-style:normal;
+	font-weight:bold;
+	color:#303030;
+}
+
+/* auto complete & quick search */
+.lum-service-search-lists-separator
+{
+	display: block !important;
+	clear: both !important;
+	border-bottom: 1px solid #cdcdcd !important;
+}
+.lum-service-search-autocomplete-list
+{
+	padding: 0 !important;
+	min-width: 150px;
+	max-width: 100%;
+}
+.lum-service-search-autocomplete-item-disabled
+{
+	clear: left !important;
+	height: 1px !important;
+	border: none !important;
+}
+.lum-service-search-autocomplete-item
+{
+	overflow: hidden;
+}
+.lum-service-search-autocomplete-item-quicksearch:after
+{
+	content: "";
+	display: block !important;
+	clear: both !important;
+	border-bottom: 1px solid #ececec !important;
+}
+.lum-service-search-autocomplete-item-quicksearch.lum-last:after
+{
+	content: none;
+}
+.lum-service-search-autocomplete-item .lum-content-title
+{
+	font-size: 16px;
+	/*! font-weight: bold; */
+	text-transform: initial;
+	margin: 2px 0;
+}
+.lum-service-search-autocomplete-item .lum-content-highlight
+{
+	height: 2em;
+	line-height: 1em;
+	overflow: hidden;
+	color: #5c5f60;
+	font-size: 0.938rem;
+	
+}
+.lum-service-search-autocomplete-item .lum-content-highlight em
+{
+	font-style: normal;
+	font-weight: bold;
+	color: #303030;
+}
+.lum-service-search-autocomplete-item .lum-content-introduction-image
+{
+	width:  10% !important;
+	/*! height: 100px !important; */
+	margin: 10px 20px 10px 0 !important;
+	float: left;
+}
+.lum-service-search-autocomplete-item .lum-content-introduction-image img
+{
+	width: 100%;
+	height: auto;
+	min-height: 50px;
+}
+
+/*
+	Categorization CSS
+*/
+.lum-aggregate-area 
+{
+    width: 30%;
+    display: inline-block;
+}
+#search_area
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: 70%;
+}
+.lum-aggregate-title
+{
+	margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.lum-aggregate-title::after
+{
+	content: ":";
+}
+.lum-aggregate-aggregation span
+{
+	color:rgb(153, 153, 153);
+	font-size:11px;
+	font-weight:bold;
+	height:auto;
+	line-height:normal;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	text-align:left;
+	text-transform:uppercase;
+}
+#lum-aggregate-filtered-links li.lum-list-item .lum-aggregate-filtered-link
+{
+	font-size: 11px;
+	margin-right: 10px;
+    background: #e7e7e7 !important;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    padding: 10px 30px 10px 10px;
+    filter: none !important;
+    display: block;
+}
+#lum-aggregate-filtered-links li.lum-list-item .lum-aggregate-filtered-link span
+{
+    font-weight: bold;
+}
+#lum-aggregate-filtered-links li.lum-list-item .lum-aggregate-filtered-link span::before
+{
+	content: ": ";
+}
+#lum-aggregate-filtered-links li.lum-list-item .lum-aggregate-remove-filter 
+{
+    position: absolute;
+    background: url(../../../../lumis/portal/client/images/del.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    top: 0;
+    right: 0;
+    margin: 10px 20px 10px 10px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#lum-aggregate-filtered-links li.lum-list-item
+{
+    position: relative;
+}
+#lum-aggregate-filtered-links li.lum-list-item::after,
+.lum-aggregate-filter-links li.lum-list-item::after
+{
+	display:none;
+}
+
+.lum-aggregate-filter-links .lum-aggregate-filter-links a 
+{
+    font-weight: normal;
+}
+
+.lum-aggregate-filter-links li.lum-list-item 
+{
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+.lum-aggregate-filter-links .lum-aggregate-filter-link .lum-aggregate-document-count::before
+{
+	content: " ";
+}
+.lum-aggregate-filter-links .lum-list.lum-aggregate-filter-links
+{
+    margin-top: 0.3em;
+}
+
+.lum-aggregate-filter-links .lum-aggregate-filter-links li.lum-list-item 
+{
+    margin: 0;
+    padding-left: 0.7em;
+    position: relative;
+}
+
+.lum-aggregate-filter-links .lum-aggregate-filter-links li.lum-list-item:before 
+{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #454545;
+    position: absolute;
+    left: 1px;
+    top: 6px;
+}
+
+span.lum-aggregate-document-count 
+{
+    text-decoration: none !important;
+    display: inline-block;
+    margin-left: 0.3em;
+}
+.lum-aggregate-aggregation > span 
+{
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+/* metaDataContent */
+
+.lumis-service-search-selectMetaDataContent .lum-filters {
+	font-size:12px;
+	margin-bottom: 1em;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-filter-query {
+	display:inline-block;
+	width:70%;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-search-result-item-link {
+	margin:0 -1em;
+	padding:1em;
+	display:block;
+	color:inherit;
+	text-decoration:none;
+	transition:all 0.2s;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-search-result-item-link:hover {
+	background:rgba(250, 181, 0,0.2);
+}
+
+.lumis-service-search-selectMetaDataContent .lum-search-result-list {
+    font-size: 1.2em;
+    padding: 1em;
+    border: 1px solid #dadada;
+    margin: 0 0 1em;
+    max-height: 25em;
+    overflow:auto;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-search-result-list ul {
+    padding: 0;
+    margin: -1em 0;
+    list-style-type: none;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-search-result-item-title {
+	margin:0;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-search-result-item-introduction {
+	font-weight:normal;
+	margin:0;
+}
+
+.lumis-service-search-selectMetaDataContent .lum-pagination {
+	font-size:1.1em;
+}
+.lum-content-header {
+	padding:13px 0 6px 0
+	
+}

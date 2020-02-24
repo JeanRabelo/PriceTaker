@@ -3,8 +3,6 @@ def definir_dicionarioAspnet(soup):
     # print(soup)
     dictAspnet = {}
     dictAspnet['__EVENTTARGET'] = r'ctl00:contentPlaceHolderConteudo:BuscaNomeEmpresa1:btnTodas'
-    # dictAspnet['__EVENTARGUMENT'] = soup.find(id='__EVENTARGUMENT')['value']
-    # 2ª possibilidade:
     dictAspnet['__EVENTARGUMENT'] = ''
     dictAspnet['__VIEWSTATE'] = soup.find(id='__VIEWSTATE')['value']
     dictAspnet['__VIEWSTATEGENERATOR'] = soup.find(id='__VIEWSTATEGENERATOR')['value']
