@@ -5,9 +5,9 @@ from os import system
 import time
 import sys
 
-def get_url_with_200(s, url, tentativa=1):
-    s_2 = requests.Session()
-    response = s_2.get(url)
+def get_url_with_200(url, tentativa=1):
+    s = requests.Session()
+    response = s.get(url)
     if response.status_code == 200:
         return response
     else:
@@ -16,19 +16,18 @@ def get_url_with_200(s, url, tentativa=1):
         tempo_espera = pow(2,(tentativa-1))*10
         print('Tivemos uma resposta ' + str(response.status_code) + ' na ' + str(tentativa) + 'ª tentativa de pegar uma resposta 200. Esperando ' + str(tempo_espera) + ' segundos')
         time.sleep(tempo_espera)
-        return get_url_with_200(s_2, url, tentativa + 1)
+        return get_url_with_200(url, tentativa + 1)
 
-def get_url(s, url, tentativa=1):
-    s_2 = requests.Session()
+def get_url(url, tentativa=1):
     try:
-        return get_url_with_200(s_2, url)
+        return get_url_with_200(url)
     except:
         if tentativa == 1:
             print('A url com problema é a seguinte:\n' + url)
         tempo_espera = pow(2,(tentativa-1))*10
         print('Tivemos um problema genérico na ' + str(tentativa) + 'ª tentativa. Esperando ' + str(tempo_espera) + ' segundos')
         time.sleep(tempo_espera)
-        return get_url(s_2, url, tentativa + 1)
+        return get_url(url, tentativa + 1)
 
 def tickers_da_empresa(str_codigoCvm):
 
@@ -38,7 +37,7 @@ def tickers_da_empresa(str_codigoCvm):
 
     print('tentando a 1ª url')
 
-    response_i = get_url(s, url_i)
+    response_i = get_url(url_i)
 
     print('1ª url ok')
 
@@ -55,7 +54,7 @@ def tickers_da_empresa(str_codigoCvm):
 
     print('tentando a 2ª url')
 
-    response_ticker = get_url(s, url_ticker)
+    response_ticker = get_url(url_ticker)
 
     system('clear')
     print('2ª url ok')
@@ -78,18 +77,25 @@ json_file_lista_empresas.close()
 n_empresas = len(lista_empresas)
 i = 1
 
-json_file_lista_tickers = open('lista_tickers.json', 'r')
-lista_tickers = json.load(json_file_lista_tickers)
-json_file_lista_tickers.close()
+json_file_lista_acoes = open('lista_acoes.json', 'r')
+lista_acoes = json.load(json_file_lista_acoes)
+json_file_lista_acoes.close()
 
 for empresa in lista_empresas:
     if not empresa['importada']:
         url_swag = empresa['linkAspNet'][38:]
         tickers_empresa = tickers_da_empresa(url_swag)
-        lista_tickers = lista_tickers + tickers_empresa
 
-        with open('lista_tickers.json', 'w') as json_file_lista_tickers:
-            json.dump(lista_tickers, json_file_lista_tickers)
+        for ticker in tickers_empresa:
+            acao = {}
+            acao['ticker'] = ticker
+            acao['razaoSocial'] = empresa['razaoSocial']
+            acao['nomeDePregao'] = empresa['nomeDePregao']
+            acao['segmento'] = empresa['segmento']
+            lista_acoes.append(acao)
+
+        with open('lista_acoes.json', 'w') as json_file_lista_acoes:
+            json.dump(lista_acoes, json_file_lista_acoes)
 
         del empresa['importada']
         empresa['importada'] = True
@@ -102,3 +108,5 @@ for empresa in lista_empresas:
         print('tickers adicionados:')
         print(tickers_empresa)
     i = i + 1
+
+print('Todas as empresas foram escaneadas!!!')
